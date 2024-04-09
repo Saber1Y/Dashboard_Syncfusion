@@ -11,7 +11,7 @@ const App = () => {
                 <div className='flex relative dark:main-dark-bg'>
                     <div className='fixed right-4 bottom-4'>
                         <TooltipComponent content="settings" position="Top" style={{ zIndex: '1000' }}>
-                            <button type='button' className='text-5xl p-3 hover:bg-shadow-xl hover:bg-light-gray'>
+                            <button type='button' className='text-4xl p-3 hover:bg-shadow-xl hover:bg-light-gray text-white' style={{ background: 'black', borderRadius: '50px' }}>
                                 <CiSettings />
                             </button>
                         </TooltipComponent>
