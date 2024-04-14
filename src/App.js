@@ -5,6 +5,9 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import './App.css'
 
 const App = () => {
+
+    const activeMenu = true;
+
     return (
         <div className=''>
             <BrowserRouter>
@@ -17,6 +20,15 @@ const App = () => {
                         </TooltipComponent>
                     </div>
                 </div>
+                {
+                    activeMenu ? (
+                        <div className="w-72 fixed dark:bg-secondary-dark bg-white">
+                            Sidebar
+                        </div>
+                    ) : (
+                        Sidebar
+                    )
+                }
             </BrowserRouter>
         </div>
     )
