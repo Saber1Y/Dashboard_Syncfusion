@@ -11,4 +11,5 @@ export { defualt as Navbar } from './Navbar'
 export { defualt as Themesettings } from './Themesettings'
 export { defualt as Charts } from './Charts'
 export { defualt as Chat } from './Chat'
+export { defualt as ChartHeader } from './ChartsHeader';
 
