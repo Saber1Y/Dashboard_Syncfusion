@@ -1,15 +1,18 @@
-export { defualt as LineChart } from './Charts/LineChart';
-export { defualt as Pie } from './Charts/Pie';
-export { defualt as SparkLine } from './Charts/SparkLine';
-export { defualt as Stacked } from './Charts/Stacked';
+export { default as LineChart } from './Charts/LineChart';
+export { default as Pie } from './Charts/Pie';
+export { default as SparkLine } from './Charts/SparkLine';
+export { default as Stacked } from './Charts/Stacked';
 
-export { defualt as Cart } from './Cart'
-export { defualt as Button } from './Button';
-export { defualt as Footer } from './Footer'
-export { defualt as Header } from './Header'
-export { defualt as Navbar } from './Navbar'
-export { defualt as Themesettings } from './Themesettings'
-export { defualt as Charts } from './Charts'
-export { defualt as Chat } from './Chat'
-export { defualt as ChartHeader } from './ChartsHeader';
+export { default as Cart } from './Cart'
+export { default as Button } from './Button';
+export { default as Footer } from './Footer'
+export { default as Header } from './Header'
+export { default as Navbar } from './Navbar'
+export { default as Themesettings } from './Themesettings'
+export { default as Chat } from './Chat'
+export { default as ChartHeader } from './ChartsHeader';
+export { default as Sidebar } from './Sidebar';
+
+
+
 

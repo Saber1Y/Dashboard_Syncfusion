@@ -2,6 +2,9 @@ import React, { useEffect } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CiSettings } from "react-icons/ci";
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
+import { Navbar, Footer, Themesettings, Sidebar } from './components/index';
+import { Orders, Stacked, Pyramid, Area, Financial, Pie, Bar } from './pages/index';
+
 import './App.css'
 
 const App = () => {
@@ -27,7 +30,7 @@ const App = () => {
                         </div>
                     ) : (
                         <div className=''>
-                            sidebar
+                            <Sidebar />
                         </div>
                     )
                 }
