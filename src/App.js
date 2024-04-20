@@ -9,7 +9,7 @@ import './App.css'
 
 const App = () => {
 
-    const activeMenu = true;
+    const activeMenu = false;
 
     return (
         <div className=''>
@@ -29,7 +29,7 @@ const App = () => {
                             Sidebar
                         </div>
                     ) : (
-                        <div className=''>
+                        <div className='w-72 fixed sidebar dark:bg-secondary-dark bg-white'>
                             <Sidebar />
                         </div>
                     )
