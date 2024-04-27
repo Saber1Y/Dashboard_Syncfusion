@@ -7,6 +7,10 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { links } from "../data/dummy";
 
 const Sidebar = () => {
+
+  const activeLink  = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2'
+  const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2"
+
   const activeMenu = true;
 
   return (
@@ -33,8 +37,25 @@ const Sidebar = () => {
           </div>
           <div className="mt-10">
             {links.map((link, index) => (
-              <div className="text-black m-3 mt-4">{link.title}</div>
+              <div key={link.title}>
+                <p className="text-black m-3 mt-4 font-popp uppercase">
+                  {link.title}
+                </p>
+                {links.links.map((li) => (
+                  <NavLink 
+                  to={`/${li.name}`}
+                  key={li.name}
+                  onClick={() => {}}
+                  className={({ isActive }) => {
+                    isActive ? activeLink : normalLink
+                  }}
+                  >
+
+                  </NavLink>
+                ))}
+              </div>
             ))}
+
           </div>
         </>
       )}
