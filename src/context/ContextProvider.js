@@ -6,5 +6,8 @@ const StateContext = CreateContext();
 const initialState = {
     notification: false,
     cart: false,
-    chat: false
+    chat: false,
+    UserProfile: false,
 }
+
+export const ContextPr
