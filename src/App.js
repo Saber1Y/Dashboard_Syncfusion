@@ -4,12 +4,13 @@ import { CiSettings } from "react-icons/ci";
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { Navbar, Footer, Themesettings, Sidebar } from './components/index';
 import { Orders, Stacked, Pyramid, Area, Financial, Pie, Bar } from './pages/index';
+import { useStateContext } from './context/ContextProvider';
 
 import './App.css'
 
 const App = () => {
 
-    const activeMenu = false;
+    const { activeMenu } = useStateContext();
 
     return (
         <div className=''>
