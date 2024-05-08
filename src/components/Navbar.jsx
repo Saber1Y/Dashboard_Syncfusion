@@ -14,7 +14,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   <TooltipComponent content={title} position="BottomCenter">
     <button
       type="button"
-      onClick={() => customFunc()}
+      onClick={customFunc}
       style={{ color }}
       className="relative text-xl rounded-full p-3 hover:bg-light-gray"
     >
@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between p-2 md:mx-6 relative'>
-      <NavButton title='menu' customfunc={setActiveMenu((prevActiveMenu) => !prevActiveMenu) } />
+      <NavButton title='menu' icon={<AiOutlineMenu />} color="black" customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} />
     </div>
   )
 }
