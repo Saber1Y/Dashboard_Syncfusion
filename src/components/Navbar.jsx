@@ -27,8 +27,17 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick } = useStateContext();
+  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize } = useStateContext();
 
+    useEffect(() => {
+      const widthSize = () => setScreenSize(window.innerWidth) //get screen size
+
+      window.addEventListener('resize', widthSize )
+
+      widthSize();
+
+      return () => window.removeEventListener('resize', widthSize)
+    }, [])
 
   return (
     <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
@@ -79,6 +88,8 @@ const Navbar = () => {
         {isClicked.cart && <Cart />}
         {isClicked.chat && <Chat />}
         {isClicked.userProfile && <UserProfile />}
+
+    
       </div>
     </div>
   );
