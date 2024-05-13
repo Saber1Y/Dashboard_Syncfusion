@@ -16,14 +16,14 @@ const Ecommerce = () => {
           <div className="flex justify-between items-center">
             <div>
               <p className="text-blue-900 font-bold text-base">Balance</p>
-              <p className="text-2xl text-black-500">$50,361</p>
+              <p className="text-2xl text-black-500">$10,361</p>
             </div>
           </div>
           <div className="mt-6">
             <Button
               color="white"
               bgColor="blue"
-              text="Download"
+              text="Transact"
               borderRadius="10px"
               size="md"
             />
@@ -31,13 +31,13 @@ const Ecommerce = () => {
         </div>
 
         <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
-          {earningData.map((data) => {
-            <div key={data.title} className="bg-white md:w-56 p-4 pt-9 rounded-2xl">
+          {earningData.map((data) => (
+            <div key={data.title} className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl">
               <button type="button" style={{ color: data.iconColor, backgroundColor: data.iconBg}}>
                 {data.icon}
               </button>
             </div>
-          })}
+          ))}
         </div>
 
       </div>
