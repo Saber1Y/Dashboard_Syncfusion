@@ -7,6 +7,7 @@ import {
 } from "../data/dummy";
 import { useStateContext } from "../context/ContextProvider";
 import { Button } from "../components";
+import { data } from "autoprefixer";
 
 const Ecommerce = () => {
   return (
@@ -39,7 +40,14 @@ const Ecommerce = () => {
             </div>
           ))}
         </div>
-
+        <p className="mt-3">
+          <span className="text-lg font-semibold">
+            {data.amount}
+          </span>
+          <span className={`text-sm text-${data.pcColor} ml-3`}>
+            {data.percentage}
+          </span>
+        </p>
       </div>
     </div>
   );
