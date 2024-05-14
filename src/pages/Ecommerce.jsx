@@ -11,7 +11,7 @@ import { data } from "autoprefixer";
 
 const Ecommerce = () => {
   return (
-    <div className="mt-12">
+    <div className="mt-22">
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-75 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
           <div className="flex justify-between items-center">
@@ -33,21 +33,26 @@ const Ecommerce = () => {
 
         <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
           {earningData.map((data) => (
-            <div key={data.title} className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl">
-              <button type="button" style={{ color: data.iconColor, backgroundColor: data.iconBg}}>
+            <div
+              key={data.title}
+              className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl"
+            >
+              <button
+                type="button"
+                style={{ color: data.iconColor, backgroundColor: data.iconBg }}
+              >
                 {data.icon}
               </button>
+              <p className="mt-3">
+                <span className="text-lg font-semibold">{data.amount}</span>
+                <span className={`text-sm text-dark:text-gray-200 dark:bg-secondary-dark-bg text-${data.pcColor} ml-3`}>
+                  {data.percentage}
+                </span>
+              </p>
+              <p className="text-sm text-gray-400  mt-1">{data.title}</p>
             </div>
           ))}
         </div>
-        <p className="mt-3">
-          <span className="text-lg font-semibold">
-            {data.amount}
-          </span>
-          <span className={`text-sm text-${data.pcColor} ml-3`}>
-            {data.percentage}
-          </span>
-        </p>
       </div>
     </div>
   );
