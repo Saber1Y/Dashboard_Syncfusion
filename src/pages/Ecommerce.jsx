@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BsCurrencyDollar } from "react-icons/bs";
+import { LuDot } from "react-icons/lu";
 import {
   earningData,
   SparklineAreaData,
@@ -45,13 +46,33 @@ const Ecommerce = () => {
               </button>
               <p className="mt-3">
                 <span className="text-lg font-semibold">{data.amount}</span>
-                <span className={`text-sm text-dark:text-gray-200 dark:bg-secondary-dark-bg text-${data.pcColor} ml-3`}>
+                <span
+                  className={`text-sm text-dark:text-gray-200 dark:bg-secondary-dark-bg text-${data.pcColor} ml-3`}
+                >
                   {data.percentage}
                 </span>
               </p>
               <p className="text-sm text-gray-400  mt-1">{data.title}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="flex flex-wrap justify-between">
+        <p className="font-semibold text-xl">Revenue Updates</p>
+        <div className="flex items-center gap-4">
+          <p className="flex items-center gap-2 text-gray-200 hover:drop-shadow-xl9">
+            <span>
+              <LuDot />
+            </span>
+            <span>Expense</span>
+          </p>
+          <p className="flex items-center gap-2 text-gray-400 hover:drop-shadow-xl">
+          <span>
+              <LuDot />
+            </span>
+            <span>Budget</span>
+          </p>
         </div>
       </div>
     </div>
