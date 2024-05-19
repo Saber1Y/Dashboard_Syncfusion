@@ -9,7 +9,7 @@ import {
 import { useStateContext } from "../context/ContextProvider";
 import { Button } from "../components";
 import { data } from "autoprefixer";
-import { SparkLine } from "../components/SparkLine";
+import { SparkLine } from "../components/Charts/SparkLine";
 
 const Ecommerce = () => {
   return (
