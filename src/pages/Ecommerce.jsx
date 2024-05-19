@@ -104,7 +104,7 @@ const Ecommerce = () => {
                   height="80px"
                   width="250px"
                   data={SparklineAreaData}
-                  color={currentColor}
+                  // color={currentColor}
                 />
               </div>
 
