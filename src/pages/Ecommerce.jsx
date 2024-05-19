@@ -9,7 +9,7 @@ import {
 import { useStateContext } from "../context/ContextProvider";
 import { Button } from "../components";
 import { data } from "autoprefixer";
-import { SparkLine } from "../components";
+import { SparkLine } from "../components/SparkLine";
 
 const Ecommerce = () => {
   return (
@@ -103,7 +103,7 @@ const Ecommerce = () => {
                   type="Line"
                   height="80px"
                   width="250px"
-                  data={SparklineAreaData}
+                  // data={SparklineAreaData}
                   // color={currentColor}
                 />
               </div>
