@@ -64,17 +64,17 @@ const Ecommerce = () => {
           <div className="flex justify-between">
             <p className="font-semibold text-xl">Revenue Updates</p>
             <div className="flex items-center gap-4">
-              <p className="flex items-center gap-2 text-gray-200 hover:drop-shadow-xl9">
+              <p className="flex items-center gap-2  hover:drop-shadow-xl9">
                 <span>
-                  <LuDot />
+                  <LuDot className="text-[#c2cad0]" />
                 </span>
-                <span>Expense</span>
+                <span className="text-[#c2cad0] text-xl font-Semi-bold">Expense</span>
               </p>
-              <p className="flex items-center gap-2 text-gray-400 hover:drop-shadow-xl">
+              <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
                 <span>
                   <LuDot />
                 </span>
-                <span>Budget</span>
+                <span className="text-xl font-Semi-bold">Budget</span>
               </p>
             </div>
           </div>
@@ -99,10 +99,10 @@ const Ecommerce = () => {
 
               <div className="mt-5">
                 <SparkLine
-                  id="line-sparkLine"
-                  type="Line"
-                  height="80px"
-                  width="250px"
+                  // id="line-sparkLine"
+                  // type="Line"
+                  // height="80px"
+                  // width="250px"
                   // data={SparklineAreaData}
                   // color={currentColor}
                 />
