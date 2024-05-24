@@ -12,14 +12,14 @@ const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
         id={id}
         height={height}
         width={width}
-        // lineWidth={1}
-        // valueType="Numeric"
-        // fill={color}
-        // border={{ color: currentColor, width: width }}
-        // dataSource={data}
-        // xName="x"
-        // yName="y"
-        // type={type}
+        lineWidth={1}
+        valueType="Numeric"
+        fill={color}
+        border={{ color: currentColor, width: width }}
+        dataSource={data}
+        xName="x"
+        yName="y"
+        type={type}
       >
         <Inject services={[SparklineTooltip]} />
       </SparklineComponent>
