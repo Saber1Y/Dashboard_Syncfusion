@@ -100,13 +100,13 @@ const Ecommerce = () => {
               </div>
 
               <div className="mt-5">
-                <SparkLine 
-                 width='250px'
-                 height='80px'
-                 currentColor='black'
-                 id='line-sparkline'
-                 data={SparklineAreaData}
-                 color='black'
+                <SparkLine
+                  width="250px"
+                  height="80px"
+                  currentColor="blue"
+                  id="line-sparkline"
+                  data={SparklineAreaData}
+                  color="blue"
                 />
               </div>
 
@@ -120,7 +120,7 @@ const Ecommerce = () => {
               </div>
             </div>
 
-            <Stacked width="320px" height="360px" />
+            {/* <Stacked width="320px" height="360px" /> */}
           </div>
         </div>
       </div>
