@@ -9,7 +9,7 @@ import {
 import { useStateContext } from "../context/ContextProvider";
 import { Button } from "../components";
 import { data } from "autoprefixer";
-import { SparkLine } from "../components/Charts/SparkLine";
+import { Stacked, SparkLine } from "../components/index";
 
 const Ecommerce = () => {
   return (
@@ -68,7 +68,9 @@ const Ecommerce = () => {
                 <span>
                   <LuDot className="text-[#c2cad0]" />
                 </span>
-                <span className="text-[#c2cad0] text-xl font-Semi-bold">Expense</span>
+                <span className="text-[#c2cad0] text-xl font-Semi-bold">
+                  Expense
+                </span>
               </p>
               <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
                 <span>
@@ -98,7 +100,14 @@ const Ecommerce = () => {
               </div>
 
               <div className="mt-5">
-             {/* SparkLine */}
+                <SparkLine 
+                 width='250px'
+                 height='80px'
+                 currentColor='black'
+                 id='line-sparkline'
+                 data={SparklineAreaData}
+                 color='black'
+                />
               </div>
 
               <div className="mt-10">
