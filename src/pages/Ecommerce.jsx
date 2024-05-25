@@ -98,14 +98,7 @@ const Ecommerce = () => {
               </div>
 
               <div className="mt-5">
-                <SparkLine
-                  // id="line-sparkLine"
-                  // type="Line"
-                  // height="80px"
-                  // width="250px"
-                  // data={SparklineAreaData}
-                  // color={currentColor}
-                />
+             {/* SparkLine */}
               </div>
 
               <div className="mt-10">
@@ -118,7 +111,7 @@ const Ecommerce = () => {
               </div>
             </div>
 
-            {/* <Stacked width="320px" height="360px" /> */}
+            <Stacked width="320px" height="360px" />
           </div>
         </div>
       </div>
