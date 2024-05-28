@@ -1,4 +1,4 @@
-// import { default as Orders } from './Orders';
+import { default as Orders } from './Orders';
 // import { default as Area } from './Charts/Area';
 // import { default as Pie } from './Charts/Pie';
 // import { default as Stacked } from './Charts/Stacked';

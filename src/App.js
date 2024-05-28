@@ -3,19 +3,20 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CiSettings } from "react-icons/ci";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { Navbar, Footer, Themesettings, Sidebar } from "./components/index";
-import {
-  Orders,
-  Stacked,
-  Pyramid,
-  Area,
-  Financial,
-  Pie,
-  Bar,
-} from "./pages/index";
+// import {
+//   Orders,
+//   Stacked,
+//   Pyramid,
+//   Area,
+//   Financial,
+//   Pie,
+//   Bar,
+// } from "./pages/index";
 import { useStateContext } from "./context/ContextProvider";
 
 import "./App.css";
 import Ecommerce from "./pages/Ecommerce";
+import Orders from './pages/Orders'
 
 const App = () => {
   const { activeMenu } = useStateContext();
@@ -61,9 +62,9 @@ const App = () => {
                 <Route path="/" element={<Ecommerce />} />
                 <Route path="/ecommerce" element={<Ecommerce />} />
 
-                {/* <Route path="/orders" element={<Orders />} />
-                <Route path="/employees" element={<Employees />} />
-                <Route path="/customers" element={<Customers />} /> */}
+                <Route path="/orders" element={<Orders />} />
+                {/* <Route path="/Employees" element={<Employees />} /> */}
+                {/* <Route path="/Customers" element={<Customers />} /> */}
 
                 {/* <Route path="/kanban" element={<Kanban />} />
                 <Route path="/editor" element={<Editor />} />
