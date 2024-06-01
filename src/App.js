@@ -3,15 +3,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CiSettings } from "react-icons/ci";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { Navbar, Footer, Themesettings, Sidebar } from "./components/index";
-// import {
-//   Orders,
-//   Stacked,
-//   Pyramid,
-//   Area,
-//   Financial,
-//   Pie,
-//   Bar,
-// } from "./pages/index";
+import {
+  Stacked,
+  Pyramid,
+  Area,
+  Financial,
+  Pie,
+  Bar,
+  Line
+} from "./pages/Charts/index";
 import { useStateContext } from "./context/ContextProvider";
 
 import "./App.css";
@@ -73,8 +73,8 @@ const App = () => {
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/color-picker" element={<ColorPicker />} /> */}
 
-                {/* <Route path="/line" element={<Line />} />
-                <Route path="/area" element={<Area />} />
+                <Route path="/line" element={<Line />} />
+                {/* <Route path="/area" element={<Area />} />
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Pie />} />
                 <Route path="/financial" element={<Financial />} />
