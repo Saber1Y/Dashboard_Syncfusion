@@ -1,5 +1,5 @@
 export { default as Line } from './Line'
-// import { default as Area } from './Charts/Area';
+export { default as Area } from './Area';
 // import { default as Pie } from './Charts/Pie';
 // import { default as Stacked } from './Charts/Stacked';
 // import { default as Pyramid } from './Charts/Pyramid';
