@@ -23,7 +23,7 @@ const LineChart = () => {
       height="420px"
       primaryXAxis={LinePrimaryXAxis}
       primaryYAxis={LinePrimaryYAxis}
-      tooltip={{ enabled: true }}
+      tooltip={{ enable: true }}
       chartArea={{ border: { width: 0 } }}
     >
       <Inject services={[LineSeries, DateTime, Legend, Tooltip]} />
