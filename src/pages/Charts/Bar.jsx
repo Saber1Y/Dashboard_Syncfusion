@@ -24,7 +24,7 @@ const Bar = () => {
     <div>
       <Header title="Inflation Rate in Percentage" />
 
-      <p className="flex items-center font-medium text-2xl">
+      <p className="flex justify-center font-medium text-2xl my-10">
         Olympic Medal Counts - RIO
       </p>
 
