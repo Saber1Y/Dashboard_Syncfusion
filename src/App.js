@@ -31,7 +31,7 @@ const App = () => {
             <TooltipComponent content="Settings" position="Top">
               <button
                 type="button"
-                onClick={() => {}}
+                onClick={() => { }}
                 // style={{ background:  borderRadius: '50%' }}
                 className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
               >
