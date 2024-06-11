@@ -13,6 +13,7 @@ export { default as Chat } from './Chat'
 export { default as ChartHeader } from './ChartsHeader';
 export { default as Sidebar } from './Sidebar';
 export { default as UserProfile } from './UserProfile';
+export { default as PieChart } from './PieChart';
 
 
 
