@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = ({ title }) => {
   return (
-    <div className='mb-4'>
-      <p className='text-lg font-normal uppercase'>{title}</p>
+    <div className='my-4'>
+      <p className='text-2xl uppercase font-bold '>{title} :</p>
     </div>
   )
 }

@@ -8,7 +8,8 @@ import {
   ColorMapping,
   Pie,
   Bar,
-  Line
+  Line,
+  pyramid
 } from "./pages/Charts/index";
 import { useStateContext } from "./context/ContextProvider";
 
