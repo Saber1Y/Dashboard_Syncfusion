@@ -4,10 +4,8 @@ import { CiSettings } from "react-icons/ci";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { Navbar, Footer, Themesettings, Sidebar } from "./components/index";
 import {
-  Stacked,
-  Pyramid,
   Area,
-  Financial,
+  ColorMapping,
   Pie,
   Bar,
   Line
@@ -73,9 +71,8 @@ const App = () => {
                 <Route path="/area" element={<Area />} />
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Pie />} />
-                {/* <Route path="/color-mapping" element={<ColorMapping />} />
-                <Route path="/pyramid" element={<Pyramid />} />
-                <Route path="/stacked" element={<Stacked />} /> */}
+                <Route path="/color-mapping" element={<ColorMapping />} />
+                {/* <Route path="/pyramid" element={<Pyramid />} /> */}
               </Routes>
             </div>
             {/* <Footer /> */}
