@@ -9,7 +9,7 @@ import {
   Pie,
   Bar,
   Line,
-  pyramid
+  Pyramid
 } from "./pages/Charts/index";
 import { useStateContext } from "./context/ContextProvider";
 
@@ -73,7 +73,7 @@ const App = () => {
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Pie />} />
                 <Route path="/color-mapping" element={<ColorMapping />} />
-                {/* <Route path="/pyramid" element={<Pyramid />} /> */}
+                <Route path="/pyramid" element={<Pyramid />} />
               </Routes>
             </div>
             {/* <Footer /> */}
