@@ -76,7 +76,7 @@ const App = () => {
                 <Route path="/pyramid" element={<Pyramid />} />
               </Routes>
             </div>
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </div>
       </BrowserRouter>
