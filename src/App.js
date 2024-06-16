@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CiSettings } from "react-icons/ci";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
-import { Navbar, Footer, Themesettings, Sidebar } from "./components/index";
+import { Navbar, Footer,  Sidebar } from "./components/index";
 import {
   Area,
   ColorMapping,
