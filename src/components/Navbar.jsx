@@ -94,7 +94,7 @@ const Navbar = () => {
 
 
         {isClicked.cart && <Cart />}
-        {/* {isClicked.chat && <Chat />} */}
+        {isClicked.chat && <Chat />}
         {isClicked.userProfile && <UserProfile />}
       </div>
     </div>

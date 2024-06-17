@@ -9,7 +9,7 @@ export { default as Footer } from './Footer'
 export { default as Header } from './Header'
 export { default as Navbar } from './Navbar'
 export { default as Themesettings } from './Themesettings'
-// export { default as Chat } from './Chat'
+export { default as Chat } from './Chat'
 export { default as ChartHeader } from './ChartsHeader';
 export { default as Sidebar } from './Sidebar';
 export { default as UserProfile } from './UserProfile';
