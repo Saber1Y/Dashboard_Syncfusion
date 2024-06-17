@@ -6,7 +6,7 @@ import { RiNotification3Line } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import avatar from "../data/avatar.jpg";
-import { Cart, Chat, UserProfile } from "./index";
+import { Cart,  UserProfile } from "./index";
 import { useStateContext } from "../context/ContextProvider";
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
@@ -94,7 +94,7 @@ const Navbar = () => {
 
 
         {isClicked.cart && <Cart />}
-        {isClicked.chat && <Chat />}
+        {/* {isClicked.chat && <Chat />} */}
         {isClicked.userProfile && <UserProfile />}
       </div>
     </div>
