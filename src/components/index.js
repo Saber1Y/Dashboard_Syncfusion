@@ -3,7 +3,7 @@ export { default as PieChart } from './Charts/PieChart';
 export { default as SparkLine } from './Charts/SparkLine';
 export { default as Stacked } from './Charts/Stacked';
 
-export { default as Cart } from './Cart'
+
 export { default as Button } from './Button';
 export { default as Footer } from './Footer'
 export { default as Header } from './Header'

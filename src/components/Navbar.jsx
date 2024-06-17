@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";
 import { BsChat } from "react-icons/bs";
-import { RiNotification3Line } from 'react-icons/ri';
+import { RiNotification3Line } from "react-icons/ri";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import avatar from "../data/avatar.jpg";
-import { Cart,  UserProfile } from "./index";
+import {  Chat, UserProfile } from "./index";
 import { useStateContext } from "../context/ContextProvider";
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
@@ -27,25 +27,33 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize } = useStateContext();
+  const {
+    activeMenu,
+    setActiveMenu,
+    isClicked,
+    setIsClicked,
+    handleClick,
+    screenSize,
+    setScreenSize,
+  } = useStateContext();
 
-    useEffect(() => {
-      const widthSize = () => setScreenSize(window.innerWidth) 
+  useEffect(() => {
+    const widthSize = () => setScreenSize(window.innerWidth);
 
-      window.addEventListener('resize', widthSize )
+    window.addEventListener("resize", widthSize);
 
-      widthSize();
+    widthSize();
 
-      return () => window.removeEventListener('resize', widthSize)
-    }, [])
+    return () => window.removeEventListener("resize", widthSize);
+  }, []);
 
-    useEffect(() => {
-      if(screenSize <= 900) {
-        setScreenSize(false)
-      } else {
-        setScreenSize(true)
-      }
-    }, [screenSize])
+  useEffect(() => {
+    if (screenSize <= 900) {
+      setScreenSize(false);
+    } else {
+      setScreenSize(true);
+    }
+  }, [screenSize]);
 
   return (
     <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
@@ -57,12 +65,6 @@ const Navbar = () => {
       />
 
       <div className="flex">
-        <NavButton
-          title="cart"
-          icon={<FiShoppingCart />}
-          color="black"
-          customFunc={() => handleClick("cart")}
-        />
         <NavButton
           title="chat"
           icon={<BsChat />}
@@ -92,8 +94,6 @@ const Navbar = () => {
           </div>
         </TooltipComponent>
 
-
-        {isClicked.cart && <Cart />}
         {isClicked.chat && <Chat />}
         {isClicked.userProfile && <UserProfile />}
       </div>
